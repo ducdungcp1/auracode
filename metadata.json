@@ -1,0 +1,5 @@
+{
+  "name": "Aura Judge",
+  "description": "A high-performance, minimalist Online Judge platform featuring automated grading, learning management, and real-time competitive leaderboards.",
+  "requestFramePermissions": []
+}

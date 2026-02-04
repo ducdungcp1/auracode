@@ -1,0 +1,29 @@
+# Temp directory for code execution
+temp/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Firebase service account
+server/config/firebase-service-account.json
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+
+# Dependencies (handled separately for client and server)
+node_modules/

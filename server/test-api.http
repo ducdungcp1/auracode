@@ -1,0 +1,114 @@
+### Test User Registration
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "password123",
+  "fullName": "Test User",
+  "role": "User"
+}
+
+### Test Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "password123"
+}
+
+### Send Email OTP
+POST http://localhost:3000/api/auth/send-otp-email
+Content-Type: application/json
+
+{
+  "email": "test@example.com"
+}
+
+### Send SMS OTP
+POST http://localhost:3000/api/auth/send-otp-sms
+Content-Type: application/json
+
+{
+  "phone": "+84987654321"
+}
+
+### Verify OTP
+POST http://localhost:3000/api/auth/verify-otp
+Content-Type: application/json
+
+{
+  "identifier": "test@example.com",
+  "otp": "123456",
+  "type": "email"
+}
+
+### Refresh Token
+POST http://localhost:3000/api/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "YOUR_REFRESH_TOKEN"
+}
+
+### Get Problems (Public)
+GET http://localhost:3000/api/problems
+
+### Get Problem Detail
+GET http://localhost:3000/api/problems/PROBLEM_ID
+
+### Create Problem (Teacher+)
+POST http://localhost:3000/api/problems
+Content-Type: application/json
+Authorization: Bearer YOUR_ACCESS_TOKEN
+
+{
+  "title": "Two Sum",
+  "difficulty": "Easy",
+  "tags": ["array", "hash-table"],
+  "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+  "samples": [
+    {
+      "input": "2\n3 5",
+      "output": "8"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "2\n3 5",
+      "output": "8",
+      "hidden": false
+    },
+    {
+      "input": "2\n10 20",
+      "output": "30",
+      "hidden": true
+    }
+  ],
+  "timeLimit": 2000,
+  "memoryLimit": 256
+}
+
+### Submit Code
+POST http://localhost:3000/api/judge/submit
+Content-Type: application/json
+Authorization: Bearer YOUR_ACCESS_TOKEN
+
+{
+  "problemId": "PROBLEM_ID",
+  "code": "#include<iostream>\nusing namespace std;\nint main(){int n,a,b;cin>>n>>a>>b;cout<<a+b<<endl;return 0;}",
+  "language": "cpp"
+}
+
+### Get Submission Status
+GET http://localhost:3000/api/judge/submission/SUBMISSION_ID
+Authorization: Bearer YOUR_ACCESS_TOKEN
+
+### Get User Submissions
+GET http://localhost:3000/api/judge/submissions
+Authorization: Bearer YOUR_ACCESS_TOKEN
+
+### Health Check
+GET http://localhost:3000/health

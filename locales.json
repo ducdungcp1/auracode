@@ -1,0 +1,93 @@
+
+{
+  "vi": {
+    "nav": {
+      "problems": "Bài Tập",
+      "learning": "Học Tập",
+      "leaderboard": "Xếp Hạng",
+      "classStats": "Thống Kê",
+      "dashboard": "Bảng Điều Khiển",
+      "adminControl": "Chế Độ Quản Trị",
+      "signIn": "Đăng Nhập"
+    },
+    "profile": {
+      "settings": "Cài đặt tài khoản",
+      "logout": "Đăng xuất"
+    },
+    "settings": {
+      "title": "Cài Đặt Tài Khoản",
+      "subtitle": "Quản lý thông tin cá nhân và bảo mật",
+      "security": "Bảo mật & Truy cập",
+      "changePassword": "Đổi mật khẩu",
+      "personalInfo": "Thông tin cá nhân",
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "studentId": "Mã học sinh",
+      "dob": "Ngày sinh",
+      "save": "Lưu thay đổi",
+      "discard": "Hủy bỏ",
+      "currentPassword": "Mật khẩu hiện tại",
+      "newPassword": "Mật khẩu mới"
+    },
+    "dashboard": {
+      "brief": "Tóm tắt ngày.",
+      "welcome": "Chào mừng trở lại,",
+      "solved": "Đã giải",
+      "rank": "Hạng",
+      "recommended": "Gợi ý cho bạn",
+      "recent": "Hoạt động gần đây",
+      "status": "Trạng thái",
+      "problem": "Bài tập",
+      "language": "Ngôn ngữ",
+      "time": "Thời gian",
+      "mastery": "Tiến độ kỹ năng",
+      "dailyChallenge": "Thử thách hàng ngày"
+    }
+  },
+  "en": {
+    "nav": {
+      "problems": "Problems",
+      "learning": "Learning",
+      "leaderboard": "Leaderboard",
+      "classStats": "Class Stats",
+      "dashboard": "Dashboard",
+      "adminControl": "Admin Mode",
+      "signIn": "Sign In"
+    },
+    "profile": {
+      "settings": "Account Settings",
+      "logout": "Logout"
+    },
+    "settings": {
+      "title": "Account Settings",
+      "subtitle": "Manage your personal information and security",
+      "security": "Security & Access",
+      "changePassword": "Change Password",
+      "personalInfo": "Personal Info",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "studentId": "Student ID",
+      "dob": "Date of Birth",
+      "save": "Save Changes",
+      "discard": "Discard",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password"
+    },
+    "dashboard": {
+      "brief": "Daily Brief.",
+      "welcome": "Welcome back,",
+      "solved": "Solved",
+      "rank": "Rank",
+      "recommended": "Recommended for you",
+      "recent": "Recent Activity",
+      "status": "Status",
+      "problem": "Problem",
+      "language": "Language",
+      "time": "Time",
+      "mastery": "Mastery Progress",
+      "dailyChallenge": "Daily Challenge"
+    }
+  }
+}
